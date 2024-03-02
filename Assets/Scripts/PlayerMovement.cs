@@ -5,6 +5,7 @@ using TMPro;
 
 public class PlayerMovementTutorial : MonoBehaviour
 {
+
     [Header("Movement")]
     public float moveSpeed;
 
@@ -41,6 +42,7 @@ public class PlayerMovementTutorial : MonoBehaviour
         rb.freezeRotation = true;
 
         readyToJump = true;
+
     }
 
     private void Update()
@@ -116,4 +118,5 @@ public class PlayerMovementTutorial : MonoBehaviour
     {
         readyToJump = true;
     }
+    
 }
