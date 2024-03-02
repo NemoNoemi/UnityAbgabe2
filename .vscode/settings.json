@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Abgabe 2.sln"
+    "dotnet.defaultSolution": "UnityAbgabe2.sln"
 }
