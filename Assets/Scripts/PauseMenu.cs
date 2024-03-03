@@ -41,6 +41,19 @@ public class PauseMenu : MonoBehaviour
         SetCursorVisibility(true);
     }
 
+public void RestartGame()
+{
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        GameIsPaused = false;
+    // Lade die aktuelle Szene neu
+    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+    // Verstecke den Cursor nach dem Neustart
+    SetCursorVisibility(false);
+}
+
+
     public void LoadMenu()
     {
         Time.timeScale = 1f;
